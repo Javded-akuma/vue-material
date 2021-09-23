@@ -1,8 +1,8 @@
 <template>
   <div>
-    <md-datepicker v-model="selectedDate" />
+    <md-datepicker v-model="selectedDate" md-icon="warning" md-color-icon="red" />
     <md-field>
-      <label for="movie">First day of a week</label>
+      <label for="movie">First day of a week </label>
       <md-select v-model="firstDayOfAWeek">
         <md-option value="0">Sunday</md-option>
         <md-option value="1">Monday</md-option>
@@ -48,3 +48,8 @@
     }
   }
 </script>
+<style lang="scss" scoped>
+.alert_warning{
+  color: red !important;
+}
+</style>
